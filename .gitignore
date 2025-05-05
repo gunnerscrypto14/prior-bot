@@ -1,0 +1,16 @@
+# Jangan upload environment variables dan private keys
+.env
+
+# Jangan upload proxy list pribadi
+proxies.txt
+
+# Folder dependencies
+node_modules/
+
+# Log files
+*.log
+
+# OS/Editor file
+.DS_Store
+Thumbs.db
+.vscode/
