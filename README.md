@@ -132,6 +132,3 @@ Portions of this code are derived from work by airdropinsiders (https://github.c
 
 This bot is for educational and testing purposes only. Use at your own risk. The developers are not responsible for any losses or damages that result from using this tool.
 
-```
-
----
