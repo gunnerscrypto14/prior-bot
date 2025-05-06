@@ -2,7 +2,15 @@ const { ethers } = require('ethers');
 const { notifyTelegram, sendSessionSummary } = require('./telegram');
 const { reportSwap, createAxiosInstance } = require('./report');
 const { sleep } = require('./utils');
-const { PRIOR_TOKEN_ADDRESS, USDC_TOKEN_ADDRESS, SWAP_ROUTER_ADDRESS, ERC20_ABI } = require('./config');
+const { PRIOR_TOKEN_ADDRESS, USDC_TOKEN_ADDRESS, SWAP_ROUTER_ADDRESS, ERC20_ABI,API_BASE_URL } = require('./config');
+const colors = {
+  green: '\x1b[32m',
+  yellow: '\x1b[33m',
+  red: '\x1b[31m',
+  white: '\x1b[37m',
+  reset: '\x1b[0m'
+};
+
 
 async function checkAndApproveToken(wallet, provider, index, proxy = null) {
   const signer = new ethers.Wallet(wallet, provider);
